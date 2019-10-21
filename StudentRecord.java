@@ -3,6 +3,7 @@ public class StudentRecord
    //contains scores.length values and scores.length > 1
    private int [] scores;
    
+   
    //Constructs a StudentRecord object with an array of scores.
    public StudentRecord(int [] s)
    {

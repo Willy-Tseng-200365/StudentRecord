@@ -13,7 +13,11 @@ public class StudentRecordTester
         int[] b={20,50,50,53,80};
         int[] c={20,50,50,80};
         
-        StudentRecord[] students;
+        studentRecord[] students;
+        students = new StudentRecord[3];
+        students[a] = new StudentRecord(a);
+        students[b] = new StudentRecord(b);
+        
     }
     
 }
