@@ -1,3 +1,5 @@
+
+
 public class StudentRecord
 {
    //contains scores.length values and scores.length > 1
@@ -16,15 +18,43 @@ public class StudentRecord
     */
    private double average(int first, int last)
    {
-      return 0; //here so the class compiles
-   }
+       if(first >= last)
+       {
+           return -1;
+        }
+        if(first < 0 || last < 0 || first <scores.length-1||last<scores.length-1)
+        {
+            return -2;
+        }
+        double sum = 0.0;
+        for(int i = first ; first <= last; i ++) 
+        {
+            sum +=scores[i];
+        }
+        return sum/(last-first+1);
+       
+       //here so the class compiles
+      
+          
+               
+        
+       
+    }
+    
+
+      
+   
     
    /** returns true if each successive value in scores is greater than
     *  or equal to the previous value; false otherwise.
     */
    private boolean hasImproved()
    {
-      return false; //here so the class compiles
+      //here so the class compiles
+      for(int i = 0; i <= scores.length-1; i++){
+          
+        }
+        return false;
    }  
    
    /** if the values in scores have imrpoved, returns the average of
